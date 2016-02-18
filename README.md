@@ -1,2 +1,1 @@
-# rxoc
-WordPress Theme for RXoc
+# The Common House WordPress Theme
