@@ -1,0 +1,48 @@
+/**--------------------------------------------------------
+ * Search Form
+ *---------------------------------------------------------*/
+.footer__search {
+  width: 240px;
+  height: 60px;
+  margin: 3em auto;
+  @include media-query(481px) {
+    width: 400px;
+  }
+  .search-form {
+    position: relative;
+  }
+  input[type="text"] {
+    width: 240px;
+    height: 60px;
+    border: none;
+    outline: 0;
+    @include font-size(18);
+    padding-left: 1em;
+    border-radius: 7px 7px 7px 7px;
+    @include media-query(481px) {
+      width: 400px;
+    }
+  }
+  input[type="image"] {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 64px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 0 7px 7px 0;
+    background: #000 url(images/spyglass.png) center center no-repeat;
+  }
+  ::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  ::-moz-placeholder {
+    font-style: italic;
+  }
+  :-ms-input-placeholder {
+    font-style: italic;
+  }
+  :-moz-placeholder {
+    font-style: italic;
+  }
+}

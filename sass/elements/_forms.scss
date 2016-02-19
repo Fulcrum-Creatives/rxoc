@@ -1,3 +1,75 @@
 /*---------------------------------------------------------
  * Forms
 ---------------------------------------------------------*/
+.gform_wrapper {
+  .ginput_complex label {
+    display: none !important;
+  }
+  div.ginput_container_name span {
+    margin-right: 8px;
+  }
+  .gfield_label {
+    @extend .proxima--bold;
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+    display: block;
+  }
+  input[type=text],
+  input[type=url],
+  input[type=email],
+  input[type=tel],
+  input[type=number],
+  input[type=password],
+  textarea {
+    @include font-size(18);
+    padding-left: 1em !important;
+    border-radius: 7px 7px 7px 7px;
+    border: 1px solid $light-grey;
+    outline: 0;
+  }
+  input[type=text],
+  input[type=url],
+  input[type=email],
+  input[type=tel],
+  input[type=number],
+  input[type=password] {
+    height: 60px;
+  }
+  textarea {
+    padding-top: 1em !important;
+  }
+  ::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  ::-moz-placeholder {
+    font-style: italic;
+  }
+  :-ms-input-placeholder {
+    font-style: italic;
+  }
+  :-moz-placeholder {
+    font-style: italic;
+  }
+  .gform_button {
+    outline: 0;
+    border: 1px solid $light-grey;
+    position: relative;
+    display: block !important;
+    width: 272px;
+    height: 52px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 0 auto;
+    color: $light-grey;
+    font-size: 22px !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    &:hover {
+      background-color: $light-grey;
+      color: #fff;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+  }
+}
+
+
+  

@@ -17,7 +17,13 @@ body {
   @include font-size($font-size__base);
   background-color: #fff;
   color: $color__font;
+  border-top: 6px solid rgb( 0, 0, 0 );
 }
 .main {
   position: relative;
+}
+blockquote {
+  border-left: 3px solid $dark-grey;
+  padding: 0 2em;
+  margin: 0 1em;
 }

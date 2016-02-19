@@ -1,0 +1,17 @@
+/**--------------------------------------------------------
+ * Address
+ *---------------------------------------------------------*/
+.company__address {
+  @include font-size(18);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 1em;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

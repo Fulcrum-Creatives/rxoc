@@ -1,0 +1,23 @@
+/**--------------------------------------------------------
+ * Logo
+ *---------------------------------------------------------*/
+.header__logo {
+  width: 100%;
+  float: none;
+  height: 51px;
+  margin-bottom: 1em;
+  @include media-query(870px) {
+    width: 105px;
+    float: left;
+    margin-bottom: 0;
+  }
+  h1 {
+    width: 105px;
+    height: 51px;
+    display: block;
+    margin: 0 auto;
+    @include media-query(870px) {
+      margin: 0;
+    }
+  }
+}

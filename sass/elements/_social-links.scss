@@ -1,0 +1,23 @@
+/**--------------------------------------------------------
+ * Social Links
+ *---------------------------------------------------------*/
+.social-links {
+  text-align: center;
+  @include font-size(30);
+  overflow: hidden;
+  width: 68px;
+  margin: 0 auto 0.75em;
+  a {
+    color: #fff;
+  }
+  .facebook,
+  .linkedin {
+    float: left;
+  }
+  .facebook {
+    margin-right: 0.25em;
+  }
+  .linkedin {
+    margin-left: 0.25em;
+  }
+}

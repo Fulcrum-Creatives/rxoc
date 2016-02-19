@@ -9,5 +9,5 @@
   <script src="<?php echo esc_url( get_template_directory_uri() );?> "/js/vendor/html5.js"></script>
 <![endif]-->
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('proxima--regular'); ?>>
 <a href="#main" class="skip-nav screen-reader-text"><?php _e('Skip to main Content', 'dfw'); ?></a>

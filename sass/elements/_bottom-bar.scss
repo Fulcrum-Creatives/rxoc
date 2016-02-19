@@ -1,0 +1,27 @@
+/**--------------------------------------------------------
+ * Bottom Bar
+ *---------------------------------------------------------*/
+.bottom-bar {
+  background-color: #000;
+  padding: 28px 0;
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.bottom-bar__left {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5em;
+  @include media-query(769px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.bottom-bar__right {
+  text-align: center;
+  @include media-query(769px) {
+    text-align: right;
+  }
+}

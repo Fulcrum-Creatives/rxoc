@@ -1,0 +1,19 @@
+/**--------------------------------------------------------
+ * Featured Content
+ *---------------------------------------------------------*/
+.featured-content {
+  width: 700px;
+  margin: 0 auto 3em;
+  padding: 0 1em;
+}
+.featured-content__block {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  .row {
+    margin-bottom: 2em;
+  }
+}
+.block__image {
+  margin-bottom: 1em;
+}

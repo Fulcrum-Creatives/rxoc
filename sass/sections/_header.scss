@@ -2,5 +2,10 @@
  * Header
 ---------------------------------------------------------*/
 .header {
- 
+  .content__wrapper {
+    padding: 1em 1.5em;
+    @include media-query(870px) {
+      padding: 2.25em 1.5em;
+    }
+  }
 }

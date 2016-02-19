@@ -1,0 +1,22 @@
+/**--------------------------------------------------------
+ * Partners
+ *---------------------------------------------------------*/
+.partners {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  .row {
+    margin-bottom: 2em;
+    @include media-query(481px) {
+      margin-bottom: 5em;
+    }
+  }
+}
+.partners__left {
+  padding-right: 0em;
+  margin-bottom: 1.5em;
+  @include media-query(769px) {
+    padding-right: 2em;
+    margin-bottom: 0;
+  }
+}

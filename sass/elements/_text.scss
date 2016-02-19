@@ -6,3 +6,13 @@ p {
   padding: 0;
   margin: 0 0 1.5em;
 }
+.check {
+  list-style-type: none;
+  padding: 0;
+  li {
+    @include font-size(20);
+    background: url( images/check.png ) left top no-repeat;
+    margin-bottom: 1em;
+    padding: 0 0 1em 3.5em;
+  }
+}

@@ -1,0 +1,58 @@
+/**--------------------------------------------------------
+ * Featured Block
+ *---------------------------------------------------------*/
+.featured-block {
+  position: relative;
+  height: 155px;
+  margin-bottom: 5em;
+  background: $dark-grey url(images/feat-bg.png);
+  @include media-query(481px) {
+    height: 250px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  .featured-block {
+    background-image: url(images/feat-bg@2.png);
+    background-size: auto 250px;
+  }
+}
+.featured-block__button {
+  position: relative;
+  width: 272px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 1px 20px 1px rgba(0,0,0,.3);
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -26px 0 0 -136px;
+  white-space: nowrap;
+  @include font-size(22);
+  transition: background-color 0.3s ease-in-out;
+  .featured-block__button-text {
+    position: absolute;
+    color: $light-grey;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in-out;
+  }
+  a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+  }
+  &:hover {
+    background-color: $light-grey;
+    transition: background-color 0.3s ease-in-out;
+    .featured-block__button-text {
+      color: #fff;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+}

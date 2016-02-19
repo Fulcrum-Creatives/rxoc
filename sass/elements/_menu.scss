@@ -3,6 +3,12 @@
 ---------------------------------------------------------*/
 .primary-nav {
   position: relative;
+  @extend .proxima--semibold;
+  float: none;
+  @include media-query(870px) {
+    float: left;
+    margin-left: 5em;
+  }
 }
 .sm {
   display: block;
@@ -29,11 +35,36 @@
     position: relative;
     display: inline-block;
     float: none;
+    padding: 1em 7px;
+    width: 133px;
+    @include font-size(16);
+    @include media-query(457px) {
+      width: auto;
+      padding: 12px 26px 6px;
+    }
   }
   a {
     position: relative;
     display: block;
     white-space: nowrap;
     text-decoration: none;
+    color: $color__font;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #fff;
+    transition: border-color 0.4s ease-in-out;
+    &:hover {
+      border-color: $light-grey;
+      transition: border-color 0.4s ease-in-out;
+    }
+  }
+}
+.current-menu-item {
+  a {
+    border-bottom: 4px solid $red;
+    &:hover {
+      border-color: $red;
+    }
   }
 }

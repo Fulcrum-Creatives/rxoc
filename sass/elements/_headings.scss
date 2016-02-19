@@ -9,3 +9,17 @@ h5,
 h6 {
   @include font-size($font-size__base);
 }
+.heading__blocks {
+  @include font-size(18);
+  margin: 0 0 16px;
+  @include media-query(481px) {
+    @include font-size(25);
+  }
+  a {
+    color: $color__font;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
