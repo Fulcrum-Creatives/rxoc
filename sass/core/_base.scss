@@ -27,3 +27,14 @@ blockquote {
   padding: 0 2em;
   margin: 0 1em;
 }
+.content {
+  p {
+    a {
+      color: rgb(51,153,255);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
