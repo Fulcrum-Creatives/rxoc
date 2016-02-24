@@ -28,7 +28,8 @@ blockquote {
   margin: 0 1em;
 }
 .content {
-  p {
+  p,
+  ul {
     a {
       color: rgb(51,153,255);
       text-decoration: none;

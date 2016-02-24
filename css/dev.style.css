@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/rxoc
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress theme for RXoc
-Version: 1.0.1
+Version: 1.0.2
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -270,11 +270,13 @@ blockquote {
   margin: 0 1em;
 }
 
-.content p a {
+.content p a,
+.content ul a {
   color: #3399ff;
   text-decoration: none;
 }
-.content p a:hover {
+.content p a:hover,
+.content ul a:hover {
   text-decoration: underline;
 }
 
