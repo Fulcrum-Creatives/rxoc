@@ -11,8 +11,17 @@ p {
   padding: 0;
   li {
     @include font-size(20);
-    background: url( images/check.png ) left top no-repeat;
+    background: url( images/bullet.png ) left top no-repeat;
+    background-size: 43px 44px;
     margin-bottom: 1em;
     padding: 0 0 1em 3.5em;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  .check {
+    li {
+      background: url( images/bullet@2.png ) left top no-repeat;
+      background-size: 43px 44px;
+    }
   }
 }

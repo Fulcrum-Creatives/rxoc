@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/rxoc
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress theme for RXoc
-Version: 1.0.2
+Version: 1.0.3
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -440,11 +440,18 @@ p {
 .check li {
   font-size: 20px;
   font-size: 1.25em;
-  background: url(images/check.png) left top no-repeat;
+  background: url(images/bullet.png) left top no-repeat;
+  background-size: 43px 44px;
   margin-bottom: 1em;
   padding: 0 0 1em 3.5em;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .check li {
+    background: url(images/bullet@2.png) left top no-repeat;
+    background-size: 43px 44px;
+  }
+}
 /*---------------------------------------------------------
  * Headings
 ---------------------------------------------------------*/
@@ -530,7 +537,7 @@ h6 {
 }
 
 .proxima--light, .intro__heading,
-.content__heading,
+.content h2.content__heading,
 .partners__heading, .error__heading {
   font-family: 'Proxima N W01 Light', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -669,32 +676,6 @@ h6 {
   }
 }
 
-.intro__heading,
-.content__heading,
-.partners__heading {
-  margin: 0 0 16px;
-}
-@media screen and (min-width: 481px) {
-  .intro__heading,
-  .content__heading,
-  .partners__heading {
-    letter-spacing: 4px;
-  }
-}
-
-.intro__heading {
-  font-size: 22px;
-  font-size: 1.375em;
-  margin: 0 0 16px;
-}
-@media screen and (min-width: 481px) {
-  .intro__heading {
-    font-size: 40px;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-  }
-}
-
 .intro__right {
   position: relative;
   overflow: visible;
@@ -712,7 +693,6 @@ h6 {
   }
 }
 
-.content__heading,
 .content h2,
 .content h3 {
   font-size: 18px;
@@ -721,7 +701,6 @@ h6 {
   text-transform: uppercase;
 }
 @media screen and (min-width: 481px) {
-  .content__heading,
   .content h2,
   .content h3 {
     font-size: 25px;
@@ -729,7 +708,6 @@ h6 {
     margin-bottom: 19px;
   }
 }
-.content__heading a,
 .content h2 a,
 .content h3 a {
   color: #333333;
@@ -738,6 +716,35 @@ h6 {
 .content h3 {
   font-size: 16px;
   font-size: 1em;
+}
+
+.intro__heading,
+.content h2.content__heading,
+.partners__heading {
+  margin: 0 0 16px;
+}
+@media screen and (min-width: 481px) {
+  .intro__heading,
+  .content h2.content__heading,
+  .partners__heading {
+    letter-spacing: 4px;
+  }
+}
+
+.intro__heading,
+.content h2.content__heading {
+  font-size: 22px;
+  font-size: 1.375em;
+  margin: 0 0 16px;
+  text-transform: none;
+}
+@media screen and (min-width: 481px) {
+  .intro__heading,
+  .content h2.content__heading {
+    font-size: 40px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
 }
 
 .content p {
